@@ -1421,17 +1421,274 @@ Los componentes comparten estilos comunes mediante archivos CSS y bibliotecas de
 ## Capítulo V: Product Implementation, Validation & Deployment  
 5.1. Software Configuration Management  
 5.1.1. Software Development Environment Configuration  
+
+Para el desarrollo de nuestro proyecto Usaremos webstorm, lo hemos dividido en 2 partes, uno el landing page donde se usará javascript, html y css , en la aplicación web utilizaremos Vue.js como framework de javascript, también se utilizará HTML ya que principalmente se encarga de este tipo de proyectos y completamos con CSS para agregar estética.
+
 5.1.2. Source Code Management  
-5.1.3. Source Code Style Guide & Conventions  
+
+Github Desktop es una aplicación de código abierto que ayuda a trabajar con código hospedado en github u otros servicios de hospedaje de Git. Contamos con 2 repositorios en Github , el primero es donde está el landing page y el segundo es donde están los criterios de aceptación.
+
+
+Repositorio donde esta el landing page y la documentacion (https://github.com/HealMe-Team/HealMe)
+
+Repositorio donde esta la aplicación web (https://github.com/HealMe-Team/Heal-Me-APP)
+
+
+5.1.3. Source Code Style Guide & Conventions 
+
+En nuestro proyecto basado en Vue.js es esencial establecer un estilo de codificación para tener coherencia y código limpio en el proyecto. Nos apoyaremos con la guía oficial de Vue, tomando esto en cuenta cumpliremos con tener un código limpio y coherente.
+
 5.1.4. Software Deployment Configuration  
+
+ Evidencia del deploy
+ 
+![Screenshot_1](https://hackmd.io/_uploads/SJ0gQLX20.jpg)
+
+![Screenshot_2](https://hackmd.io/_uploads/BylEQLXhC.jpg)
+
+![Screenshot_3](https://hackmd.io/_uploads/BJ9q7U7hR.jpg)
+
 5.2. Landing Page, Services & Applications Implementation  
-5.2.1. Sprint n  
-5.2.1.1. Sprint Planning n  
+5.2.1. Sprint 1  
+5.2.1.1. Sprint Planning 1  
+
+| Sprint#                       | Sprint 1                                |
+|-------------------------------|-----------------------------------------|
+| **Sprint Planning Background** |                                         |
+| Date                           | 2024-08-28                              |
+| Time                           | 3:22                                    |
+| Location                       | Reunión virtual realizada en Discord     |
+| Prepared By                    | Alcántara Cruz Rodrigo Alonso           |
+| Attendees (to planning meeting)| -Cuevas Vera, José Angel,Alonso Garay, Diego Jesús,Roque Tello, Jack Eddie, Cisneros Salas, Luis Angel, Alcántara Cruz Rodrigo Alonso                   |
+| **Sprint n - 1 Review Summary**| Avanzar el landing page y brindar sugerencias para el estilo de la página |
+| **Sprint n-1 Retrospective Summary** | Se destacó la importancia de completar el landing page para nuestro proyecto |
+| **Sprint Goal & User Stories** |                                         |
+| Sprint n Goal                  | El objetivo que tenemos es mejorar las funcionalidades de la página web, por ahora hemos agregado el contactenos, nos falta el log in y register |
+| Sprint n Velocity              | Para nuestro sprint el equipo ha establecido la escala Fibonacci para así determinar la complejidad del tiempo de elaboración. |
+| Sum of Story Points            |  De momento no hemoc cumplido los user stories por que aun esta en desarrollo la app web                                     |
+
+### Objetivo Principal del Sprint
+
+El objetivo principal del Sprint 1 es implementar las funcionalidades básicas de la plataforma HealMe, que incluyen el inicio de sesión de usuarios, la capacidad de reservar citas médicas, y la visualización del historial de citas. Además, se busca implementar las notificaciones de confirmación de reserva.
+
+
 5.2.1.2. Sprint Backlog n  
+
+| **User Story ID** | **Título**                                | **Work-Item/Task ID** | **Título**                          | **Descripción**                                                                                                                     | **Estimación (Horas)** | **Asignado a** | **Estado**            |
+|-------------------|-------------------------------------------|-----------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------|-----------------------|
+| US-01             | Buscar y agregar medicinas al carrito      | TSK-001               | Crear funcionalidad de búsqueda     | Implementar la funcionalidad de búsqueda de medicinas y la capacidad de agregar productos al carrito de compra.                      | 12                     | Rodrigo            | In-Process            |
+| US-02             | Realizar el pago de las medicinas          | TSK-002               | Integrar sistema de pagos           | Configurar e integrar un sistema de pagos seguro para la compra de medicinas.                                                        | 8                      | Rodrigo         | To-Do                 |
+| US-03             | Buscar y seleccionar un doctor             | TSK-003               | Crear pantalla de selección de doctor | Desarrollar la interfaz para que los usuarios puedan buscar, ver perfiles y seleccionar doctores disponibles para consultas.          | 10                     | Diego          | In-Process            |
+| US-04             | Ver el historial de citas                  | TSK-004               | Crear pantalla de historial de citas | Implementar la funcionalidad que permite a los usuarios visualizar su historial de citas, con detalles como fecha, hora y doctor.     | 8                      | Diego           | To-Do                 |
+| US-05             | Reservar una cita médica                   | TSK-005               | Crear sistema de reserva            | Implementar la interfaz y backend para que los usuarios puedan reservar citas médicas seleccionando fecha y hora.                    | 12                     | Diego          | In-Process            |
+| US-05             | Reservar una cita médica                   | TSK-006               | Mostrar mensaje de confirmacion       | Implementar el sistema de mensaje de confirmacion de la cita medica                   | 4                      | Diego          | To-Do                 |
+| US-07             | Registrarme en la aplicación               | TSK-007               | Crear formulario de registro        | Desarrollar la funcionalidad para que los usuarios puedan registrarse con sus datos personales, correo electrónico y contraseña.     | 10                     | Luis           | To-Do                 |
+| US-09             | Ver y elegir un centro médico              | TSK-008               | Mostrar lista de centros médicos    | Implementar la pantalla que muestra la lista de centros médicos con detalles y filtros como ubicación y especialidades disponibles.   | 8                      | Luis        | In-Process            |
+| US-10             | Ver citas pendientes del doctor            | TSK-009               | Crear vista de citas pendientes     | Desarrollar la funcionalidad que permite al doctor visualizar las citas pendientes y filtrar por fechas.                             | 5                      | Diego          | In-Process            |
+| US-11             | Ver historial de citas terminadas del doctor| TSK-010               | Mostrar historial de citas          | Implementar la funcionalidad que permite al doctor ver el historial de citas completadas, con detalles de cada paciente atendido.     | 6                      | Luis          | To-Do                 |
+
+
+
 5.2.1.3. Development Evidence for Sprint Review  
+
+### Sprint 1
+
+En este Sprint, hemos logrado implementar las funcionalidades principales de la plataforma HealMe, como la reserva de citas médicas, la confirmación de reservas, y la visualización del historial de citas. Estas implementaciones corresponden a las secciones críticas de la plataforma, permitiendo a los usuarios acceder a servicios médicos en ubicaciones desconocidas. A continuación, se presentan los avances en la implementación a través de los commits realizados en los repositorios involucrados en el desarrollo de estas funcionalidades.
+
+
+| **Repository**   | **Branch**   | **Commit ID** | **Commit Message**             | **Commit Message Body**                                                       | **Committed on (Date)** |
+|------------------|--------------|---------------|--------------------------------|--------------------------------------------------------------------------------|-------------------------|
+|  Healme  |  main  |    index.html   |      index.html file added           |       Landing Added      | 2024-09-01              |
+
+
 5.2.1.4. Testing Suite Evidence for Sprint Review  
+
+Durante este Sprint, se realizaron pruebas automatizadas para asegurar el correcto funcionamiento de los Web Services relacionados con los User Stories especificados. Se desarrollaron Unit Tests, Integration Tests, y Acceptance Tests utilizando el enfoque BDD. Las pruebas abarcaron funcionalidades como búsqueda de clínicas, reserva de citas médicas y manejo del perfil de usuario.
+
+| **Repository**      | **Branch**           | **Commit ID** | **Commit Message**                              | **Commit Message Body**                                                                  | **Committed on (Date)** |
+|---------------------|----------------------|---------------|-------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------|
+| Healme      | main         | US-003.feature       | Create US-003.feature          | Añadido del Acceptance-Test.                      | 2024-09-03              |
+| Healme      | main         | US-005.feature       | Create US-005.feature          | Añadido del Acceptance-Test.                      | 2024-09-04              |
+| Healme      | main         | US-006.feature       | Create US-006.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+| Healme      | main         | US-009.feature       | Create US-009.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+
+
 5.2.1.5. Execution Evidence for Sprint Review  
-5.2.1.6. Services Documentation Evidence for Sprint Review  
+
+Aqui mostramos la evidencia del landing page
+En el landing page tenemos un about us para poder informar al usuario que servicio ofrecemos, el landing page tambien cuenta con un sistema de reseñas para que el usuario pueda ver comentarios de otros usuarios.
+
+![Screenshot_3](https://hackmd.io/_uploads/BJ9q7U7hR.jpg)
+
+
+5.2.1.6. Services Documentation Evidence for Sprint Review
+
+## Servicios Documentación Evidencia para la Revisión del Sprint
+
+### Introducción
+Durante este Sprint, hemos logrado documentar los servicios web relacionados con la plataforma "HEALME". La documentación incluye los endpoints que pronto se implemetarán, describiendo las acciones soportadas, verbos HTTP, parámetros, y ejemplos de respuestas. Esta sección proporciona una visión general de los endpoints desarrollados y su integración con la plataforma. (estan en proceso)
+
+| **Endpoint**       | **Acción Implementada**          | **Verbo HTTP** | **Sintaxis de Llamada**                         | **Parámetros**                    | **Ejemplo de Response**          | **Explicación del Response**                                               |
+|--------------------|---------------------------------|----------------|-------------------------------------------------|----------------------------------|----------------------------------|---------------------------------------------------------------------------|
+| /clinics/search    | Buscar clínicas cercanas         | GET            | `/clinics/search?location={location}`           | location (string)                | `{ "clinics": [ ... ] }`         | Lista de clínicas cercanas con detalles básicos.                           |
+| /clinics/filter    | Filtrar clínicas por especialidad| GET            | `/clinics/filter?specialty={specialty}`         | specialty (string)               | `{ "clinics": [ ... ] }`         | Lista de clínicas que ofrecen la especialidad seleccionada.                |
+| /clinics/compare   | Comparar clínicas                | POST           | `/clinics/compare`                              | clinic_ids (array of strings)    | `{ "comparison": { ... } }`      | Comparación de clínicas seleccionadas basada en calificaciones y precios. |
+| /clinics/{id}      | Detalles de la clínica           | GET            | `/clinics/{id}`                                 | id (string)                      | `{ "clinic": { ... } }`          | Detalles completos de la clínica específica.                              |
+| /appointments      | Reservar cita médica             | POST           | `/appointments`                                 | clinic_id (string), date (string), time (string) | `{ "appointment": { ... } }` | Confirmación de la reserva de cita médica.                                |
+| /appointments/{id} | Confirmación de la reserva       | GET            | `/appointments/{id}`                            | id (string)                      | `{ "appointment": { ... } }`     | Confirmación de detalles de la cita médica.                               |
+| /clinics/{id}/map  | Ver ubicación de la clínica      | GET            | `/clinics/{id}/map`                             | id (string)                      | `{ "map_url": "url" }`           | URL del mapa con la ubicación de la clínica.                               |
+| /navigation        | Navegar hasta la clínica          | GET            | `/navigation?clinic_id={clinic_id}&current_location={current_location}` | clinic_id (string), current_location (string) | `{ "directions": [ ... ] }`  | Instrucciones de navegación desde la ubicación actual hasta la clínica.    |
+| /profile           | Crear perfil de usuario           | POST           | `/profile`                                      | user_info (object)               | `{ "profile": { ... } }`         | Confirmación de la creación del perfil del usuario.                        |
+| /profile/{id}      | Actualizar perfil de usuario      | PUT            | `/profile/{id}`                                 | id (string), user_info (object)  | `{ "profile": { ... } }`         | Confirmación de la actualización del perfil del usuario.                   |                 |
+
+### Capturas de Pantalla
+
+![image](https://github.com/user-attachments/assets/9bd760c4-d313-4bc2-9df0-9b482ba83e45)
+
+
 5.2.1.7. Software Deployment Evidence for Sprint Review  
+
+## Software Deployment Evidencia para la Revisión del Sprint
+Aqui hay una evidencia de que se ha hecho un deploy, se adjunta el link: https://roiander.github.io/HealMe/
+
+Se evidencia las funcionalidades del landing page y se muestra la informacion del producto.
+
+![image](https://github.com/user-attachments/assets/a5e56dfe-7421-44ea-8b35-6d32cadcefd0)
+
+
 5.2.1.8. Team Collaboration Insights during Sprint  
+
+Para el desarrollo de la primera versión de la plataforma, el equipo realizó el trabajo de forma colaborativa y equitativa. En la siguiente tabla se mostrará la relación que posee cada integrante y las estadísticas de sus commits.
+
+| Integrantes                           | Usuario          | Rol        |
+|---------------------------------------|------------------|------------|
+| Alonso Garay, Diego Jesus             | DiegoAlonso04    | Colaborador|
+| Cisneros Salas, Luis Angel    | LuisCS341 | Colaborador|
+| Alcántara Cruz, Rodrigo Alonso    | Roiander | Admin |
+
+![image](https://github.com/user-attachments/assets/601ca4c4-3a66-42e7-a041-378c44daf594)
+
+### 5.2.2. Sprint 2 
+
+5.2.2.1. Sprint Planning 2
+
+| Sprint#                       | Sprint 2                                |
+|-------------------------------|-----------------------------------------|
+| **Sprint Planning Background** |                                         |
+| Date                           | 2024-08-28                              |
+| Time                           | 10:12                                    |
+| Location                       | Reunión virtual realizada en Discord     |
+| Prepared By                    | Alcántara Cruz Rodrigo Alonso           |
+| Attendees (to planning meeting)| Diego Jesús Alonso Garay, Luis Cisneros Salas, Alcántara Cruz Rodrigo Alonso                   |
+| **Sprint n - 1 Review Summary**| Avanzar la primera version de HealMe |
+| **Sprint n-1 Retrospective Summary** | Se destacó la importancia de avanzar la app web para nuestro proyecto |
+| **Sprint Goal & User Stories** |                                         |
+| Sprint n Goal                  | El objetivo que tenemos es implementar los routes para que el toolbar redirija a otras funcionalidades de la app |
+| Sprint n Velocity              | Para nuestro sprint el equipo ha establecido la escala Fibonacci para así determinar la complejidad del tiempo de elaboración. |
+| Sum of Story Points            |  De momento no hemoc cumplido los user stories por que aun esta en desarrollo la app web                                     |
+
+### 5.2.2.2. Sprint Backlog 2. 
+
+### Sprint 2
+
+### Objetivo Principal del Sprint
+
+El objetivo principal del Sprint 2 es implementar las funcionalidades básicas de la plataforma HealMe, que incluyen el inicio de sesión de usuarios, la capacidad de reservar citas médicas, y la visualización del historial de citas. Además, se busca implementar las notificaciones de confirmación de reserva.
+
+Enlace del sprint en Trello: https://trello.com/invite/b/66da07a121d7f4b87735bab5/ATTI5580c46e73dbba23538e9fcb71477cfdBCAAB835/sprint-healme
+
+### Tabla del Sprint Backlog
+
+## Sprint Backlog 
+
+| **User Story ID** | **Título**                                | **Work-Item/Task ID** | **Título**                          | **Descripción**                                                                                                                     | **Estimación (Horas)** | **Asignado a** | **Estado**            |
+|-------------------|-------------------------------------------|-----------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------|-----------------------|
+| US-01             | Buscar y agregar medicinas al carrito      | TSK-001               | Crear funcionalidad de búsqueda     | Implementar la funcionalidad de búsqueda de medicinas y la capacidad de agregar productos al carrito de compra.                      | 12                     | Rodrigo        | Done                  |
+| US-02             | Realizar el pago de las medicinas          | TSK-002               | Integrar sistema de pagos           | Configurar e integrar un sistema de pagos seguro para la compra de medicinas.                                                        | 8                      | Rodrigo        | Done                  |
+| US-03             | Buscar y seleccionar un doctor             | TSK-003               | Crear pantalla de selección de doctor | Desarrollar la interfaz para que los usuarios puedan buscar, ver perfiles y seleccionar doctores disponibles para consultas.          | 10                     | Diego          | Done                  |
+| US-04             | Ver el historial de citas                  | TSK-004               | Crear pantalla de historial de citas | Implementar la funcionalidad que permite a los usuarios visualizar su historial de citas, con detalles como fecha, hora y doctor.     | 8                      | Diego          | Done                  |
+| US-05             | Reservar una cita médica                   | TSK-005               | Crear sistema de reserva            | Implementar la interfaz y backend para que los usuarios puedan reservar citas médicas seleccionando fecha y hora.                    | 12                     | Diego          | Done                  |
+| US-05             | Reservar una cita médica                   | TSK-006               | Mostrar mensaje de confirmación     | Implementar el sistema de mensaje de confirmación de la cita médica                                                                  | 4                      | Diego          | Done                  |
+| US-07             | Registrarme en la aplicación               | TSK-007               | Crear formulario de registro        | Desarrollar la funcionalidad para que los usuarios puedan registrarse con sus datos personales, correo electrónico y contraseña.     | 10                     | Luis           | Done                  |
+| US-09             | Ver y elegir un centro médico              | TSK-008               | Mostrar lista de centros médicos    | Implementar la pantalla que muestra la lista de centros médicos con detalles y filtros como ubicación y especialidades disponibles.   | 8                      | Luis           | Done                  |
+| US-10             | Ver citas pendientes del doctor            | TSK-009               | Crear vista de citas pendientes     | Desarrollar la funcionalidad que permite al doctor visualizar las citas pendientes y filtrar por fechas.                             | 5                      | Diego          | Done                  |
+| US-11             | Ver historial de citas terminadas del doctor| TSK-010               | Mostrar historial de citas          | Implementar la funcionalidad que permite al doctor ver el historial de citas completadas, con detalles de cada paciente atendido.     | 6                      | Luis           | Done                  |
+
+### 5.2.2.3. Development Evidence for Sprint Review. 
+
+### Sprint 2
+
+En este Sprint, hemos logrado implementar las funcionalidades principales de la plataforma HealMe de forma completa, como la reserva de citas médicas, la confirmación de reservas, y la visualización del historial de citas. Estas implementaciones corresponden a las secciones críticas de la plataforma, permitiendo a los usuarios acceder a servicios médicos en ubicaciones desconocidas. A continuación, se presentan los avances en la implementación a través de los commits realizados en los repositorios involucrados en el desarrollo de estas funcionalidades.
+
+
+| **Repository**   | **Branch**   | **Commit ID** | **Commit Message**             | **Commit Message Body**                                                       | **Committed on (Date)** |
+|------------------|--------------|---------------|--------------------------------|--------------------------------------------------------------------------------|-------------------------|
+|  Heal-Me-APP  |  main  |   update app  |      proyect          |       App finished     | 2024-09-24              |
+
+### 5.2.2.4. Testing Suite Evidence for Sprint Review. 
+
+Durante este Sprint, se realizaron pruebas automatizadas para asegurar el correcto funcionamiento de los Web Services relacionados con los User Stories especificados. Se desarrollaron Unit Tests, Integration Tests, y Acceptance Tests utilizando el enfoque BDD. Las pruebas abarcaron funcionalidades como búsqueda de clínicas, reserva de citas médicas y manejo del perfil de usuario.
+
+| **Repository**      | **Branch**           | **Commit ID** | **Commit Message**                              | **Commit Message Body**                                                                  | **Committed on (Date)** |
+|---------------------|----------------------|---------------|-------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------|
+| Healme      | main         | US-003.feature       | Create US-003.feature          | Añadido del Acceptance-Test.                      | 2024-09-03              |
+| Healme      | main         | US-005.feature       | Create US-005.feature          | Añadido del Acceptance-Test.                      | 2024-09-04              |
+| Healme      | main         | US-006.feature       | Create US-006.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+| Healme      | main         | US-009.feature       | Create US-009.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+
+### 5.2.2.5. Execution Evidence for Sprint Review. 
+Aqui mostramos la evidencia de la aplicacion web
+En la aplicacion cumplimos con las funcionalidades de reservar cita, ver historial de citas, confirmacion de la cita reservada, venta de productos medicos, reseñas de hospitales y doctores, eleccion de horarios, hospitals y doctores para la cita medica. En caso de los doctores tambien cumplimos todo, se ha implementado el poder visualizar las citas reservadas por los usuarios y se puede ver la hora, fecha , detalles del paciente y tambien se ha implementado el boton para poder ver el historial de citas como doctor.
+
+<img src="assets/img/deploy-1.png">
+
+<img src="assets/img/deploy-2.png">
+
+<img src="assets/img/deploy-3.png">
+
+<img src="assets/img/deploy-4.png">
+
+<img src="assets/img/deploy-5.png">
+
+<img src="assets/img/deploy-6.png">
+
+<img src="assets/img/deploy-7.png">
+
+### 5.2.2.6. Services Documentation Evidence for Sprint Review. 
+## Servicios Documentación Evidencia para la Revisión del Sprint
+
+### Introducción
+Durante este Sprint, hemos logrado documentar los servicios web relacionados con la plataforma "HEALME". La documentación incluye los endpoints que pronto se implemetarán, describiendo las acciones soportadas, verbos HTTP, parámetros, y ejemplos de respuestas. Esta sección proporciona una visión general de los endpoints desarrollados y su integración con la plataforma. (estan en proceso)
+
+| **Endpoint**                | **Acción Implementada**                          | **Verbo HTTP** | **Sintaxis de Llamada**                                      | **Parámetros**                                     | **Ejemplo de Response**              | **Explicación del Response**                                                   |
+|-----------------------------|--------------------------------------------------|----------------|--------------------------------------------------------------|---------------------------------------------------|--------------------------------------|-------------------------------------------------------------------------------|
+| /doctor                     | Ver lista de doctores                           | GET            | `/doctor`                                                    | -                                                 | `{ "doctors": [ ... ] }`             | Lista de doctores disponibles con detalles básicos.                           |
+| /hospitals                  | Visualizar hospitales o clínicas disponibles    | GET            | `/hospitals`                                                 | -                                                 | `{ "hospitals": [ ... ] }`           | Lista de hospitales o clínicas disponibles.                                   |
+| /appointments               | Reservar cita médica                            | POST           | `/appointments`                                              | clinic_id (string), date (string), time (string)  | `{ "appointment": { ... } }`         | Confirmación de la reserva de una cita médica.                                |
+| /products                   | Ver productos disponibles para la compra        | GET            | `/products`                                                  | -                                                 | `{ "products": [ ... ] }`            | Lista de productos disponibles para la compra.                                |
+| /appointments/{id}          | Ver confirmación de la reserva de cita          | GET            | `/appointments/{id}`                                         | id (string)                                      | `{ "appointment": { ... } }`         | Detalles de la cita médica confirmada.                                        |
+| /doctor-view                | Ver vista del doctor                            | GET            | `/doctor-view?clinic_id={clinic_id}&current_location={current_location}` | clinic_id (string), current_location (string)   | `{ "directions": [ ... ] }`          | Instrucciones de navegación desde la ubicación actual hasta la clínica.       |
+| /doctor-view/history        | Ver historial de citas de sus pacientes         | GET            | `/doctor-view/history`                                       | -                                                 | `{ "history": [ ... ] }`             | Historial de citas de los pacientes del doctor.                               |
+| /doctor-view/appointments   | Ver las citas programadas por sus pacientes     | GET            | `/doctor-view/appointments`                                  | -                                                 | `{ "appointments": [ ... ] }`        | Lista de citas programadas por los pacientes del doctor.                      |
+
+Commits of the team :
+
+<img src="assets/img/commits-image-tp.png">
+
+
+### Conclusiones 
+- Hemos llegado a la conslusion de que la elaboracion del proyecto de la aplicacion HealMe es fundamental para casi todo el mundo, pues estamos brindando informacion medica de calidad a extranjeros y locales para que no tengan dificultades al solicitar atencion medica por un viaje, etc.
+- El trabajo en equipo es fundamental para la culminacion del trabajo , fomentando un buen ambiente para todos los integrantes.
+- La implementacion de tecnologías usando la navegacion a internet para poder completar el trabajo es fundamental ya que debemos acostumbrarnos a mantener un aprendizaje continuo para poder alcanzar mejores metas como profesionales.
+- Se llego a la conclusion que la medicina peruana y la programacion pueden trabajar en equipo para poder alcanzar una cantidad mayor de usuarios siende beneficiosa para ambos sectores.
+
+
+### Referencias bibliograficas
+
+Vue.js. (s. f.). https://vuejs.org/guide/introduction.html
+
+PrimeVue | Vue UI Component Library. (s. f.). https://primevue.org/introduction/
+
+Stack Overflow - where developers learn, share, & build careers. (s. f.). Stack Overflow. https://stackoverflow.com/
+
 
