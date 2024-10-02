@@ -183,6 +183,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
 ## Capítulo I: Introducción
 1.1. Startup Profile  
 1.1.1. Descripción de la Startup 
+
 Nuestra startup se especializa en ofrecer una solución digital diseñada para turistas y viajeros que requieren acceso inmediato a servicios médicos en una ciudad o país que no conocen por eso hemos decidido crear "HEALME". Nuestra startup permite a los usuarios buscar, comparar y reservar citas médicas en una amplia variedad de especialidades y centros de salud locales. La plataforma facilita el acceso a la atención médica en destinos desconocidos, asegurando que los viajeros puedan recibir el cuidado necesario sin complicaciones.
 
 <div >
