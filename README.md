@@ -1084,34 +1084,339 @@ El **To-Be Scenario Mapping** describe el escenario actual de cómo los usuarios
 
 
 
-## Capítulo IV: Product Design  
-4.1. Style Guidelines  
-4.1.1. General Style Guidelines  
-4.1.2. Web Style Guidelines  
-4.2. Information Architecture  
-4.2.1. Organization Systems  
-4.2.2. Labeling Systems  
-4.2.3. SEO Tags and Meta Tags  
-4.2.4. Searching Systems  
-4.2.5. Navigation Systems  
-4.3. Landing Page UI Design  
-4.3.1. Landing Page Wireframe  
-4.3.2. Landing Page Mock-up  
-4.4. Web Applications UX/UI Design  
-4.4.1. Web Applications Wireframes  
-4.4.2. Web Applications Wireflow Diagrams  
-4.4.3. Web Applications Mock-ups  
-4.4.4. Web Applications User Flow Diagrams  
-4.5. Web Applications Prototyping  
-4.6. Domain-Driven Software Architecture  
-4.6.1. Software Architecture Context Diagram  
-4.6.2. Software Architecture Container Diagrams  
-4.6.3. Software Architecture Components Diagrams  
-4.7. Software Object-Oriented Design  
-4.7.1. Class Diagrams  
-4.7.2. Class Dictionary  
-4.8. Database Design  
-4.8.1. Database Diagram  
+## Capítulo IV: Product Design 
+
+## 4.1. Style Guidelines. V1.0
+
+### 4.1.1. General Style Guidelines
+
+Las **Guías Generales de Estilo** establecen las bases para mantener una apariencia y sensación coherente en toda la plataforma "HEALME". Estas directrices aseguran que todos los elementos visuales y de comunicación estén alineados con la identidad de la marca y proporcionen una experiencia de usuario óptima.
+
+### Elementos Clave:
+
+- **Identidad de Marca:**
+  - **Logo:** El logo de HEALME debe ser claro y reconocible, utilizando los colores principales de la marca.
+  - **Paleta de Colores:** Se utilizarán tonos verdes claros para títulos importantes, tonos oscuros para los fondos y tonos blancos para el texto, asegurando un contraste adecuado para una lectura fácil.
+  ![2-removebg-preview (1)](https://hackmd.io/_uploads/Sy-NxHZ2R.png)
+![HealMe Logo](https://hackmd.io/_uploads/ryErlrW20.png)
+![imagen_2024-08-31_201703420](https://hackmd.io/_uploads/SJ_9xS-hA.png)
+
+
+- **Tipografía:**
+  - **Fuente Principal:** Utilizar una fuente sans-serif moderna y legible, como **Roboto** o **Open Sans**.
+  - **Jerarquía Tipográfica:** Establecer tamaños y pesos de fuente distintos para títulos, subtítulos, cuerpo de texto y elementos destacados.
+
+- **Espaciado y Layout:**
+  - **Márgenes y Padding:** Mantener un espaciado consistente entre elementos para una apariencia limpia y ordenada.
+  - **Grid System:** Utilizar un sistema de cuadrícula para alinear y organizar el contenido de manera coherente.
+
+- **Iconografía y Gráficos:**
+  - **Estilo de Iconos:** Usar iconos simples y lineales que se integren con el diseño general.
+  - **Imágenes:** Utilizar imágenes de alta calidad que reflejen la diversidad de los usuarios y proveedores de servicios médicos.
+
+- **Tono y Voz:**
+  - **Comunicación:** Mantener un tono profesional, amigable y accesible.
+  - **Lenguaje Claro:** Evitar jerga técnica innecesaria y asegurar que la información sea comprensible para todos los usuarios.
+
+### 4.1.2. Web Style Guidelines
+
+Las **Guías de Estilo Web** se enfocan en los aspectos específicos del diseño para la plataforma digital, asegurando una experiencia de usuario consistente y atractiva.
+
+![landing](https://hackmd.io/_uploads/S1G4bHWn0.png)
+
+
+### Elementos Específicos:
+
+- **Colores:**
+  - **Títulos Importantes:** Verde claro (#A8D5BA) para resaltar títulos y llamadas a la acción.
+  - **Fondos:** Tonos oscuros (#2C3E50, #34495E) para crear un contraste elegante y profesional.
+  - **Texto:** Blanco puro (#FFFFFF) para garantizar legibilidad sobre fondos oscuros.
+
+- **Tipografía Web:**
+  - **Fuente Principal:** Roboto, Open Sans o similar para una lectura fluida en pantallas.
+  - **Tamaños:**
+    - **Título Principal (H1):** 32px
+    - **Subtítulos (H2, H3):** 24px, 20px
+    - **Cuerpo de Texto:** 16px
+    - **Pequeños Detalles:** 14px
+
+- **Botones y Elementos Interactivos:**
+  - **Botones Primarios:** Verde claro con texto blanco, borde redondeado.
+  - **Botones Secundarios:** Tonos oscuros con texto blanco.
+  - **Estados de Botón:** Hover, activo y deshabilitado deben estar claramente diferenciados.
+
+- **Imágenes y Multimedia:**
+  - **Formato:** Preferentemente JPEG o PNG para imágenes estáticas, y MP4 para videos.
+  - **Optimización:** Comprimir imágenes para mejorar tiempos de carga sin sacrificar calidad.
+
+- **Responsividad:**
+  - **Diseño Adaptable:** Asegurar que la plataforma se visualice correctamente en dispositivos móviles, tablets y desktops.
+  - **Breakpoints:** Definir puntos de quiebre para ajustar el layout según el tamaño de la pantalla.
+
+- **Accesibilidad:**
+  - **Contraste de Colores:** Asegurar que el contraste entre el texto y el fondo cumpla con los estándares de accesibilidad.
+  - **Etiquetas Alt:** Incluir descripciones alternativas en todas las imágenes para usuarios con discapacidades visuales.
+  - **Navegación con Teclado:** Garantizar que todos los elementos interactivos sean accesibles mediante el teclado.
+
+## 4.2. Information Architecture
+
+La **Arquitectura de la Información** define cómo se organiza y estructura el contenido dentro de la plataforma "HEALME", facilitando la navegación y el acceso a la información por parte de los usuarios.
+
+### 4.2.1. Organization Systems
+
+**Sistemas de Organización** determinan la manera en que se agrupan y categorizan los contenidos en la plataforma.
+
+### Estructura Principal:
+
+- **Home/Landing Page:** Introducción a HEALME, características principales, testimonios y llamadas a la acción.
+- **Buscar Servicios Médicos:** Herramienta de búsqueda avanzada por ubicación, especialidad y precio.
+- **Perfil del Proveedor:** Página individual para cada centro médico con detalles, horarios, precios y reseñas.
+- **Reservas/Citas:** Sección para gestionar reservas de citas médicas.
+- **Historial Médico:** Registro de citas pasadas y detalles de tratamientos.
+- **Sobre Nosotros:** Información sobre la startup, misión, visión y equipo.
+- **Contacto y Soporte:** Formulario de contacto, preguntas frecuentes y soporte en línea.
+- **Blog/Recursos:** Artículos y recursos relacionados con la salud y viajes.
+
+### Modelos de Organización Utilizados:
+
+- **Jerárquico:** Estructura de árbol donde la información se organiza de lo general a lo específico.
+- **Secuencial:** Flujo lógico de pasos para completar tareas, como reservar una cita.
+- **Red:** Conexiones entre diferentes secciones para facilitar el acceso rápido a información relacionada.
+
+### 4.2.2. Labeling Systems
+
+**Sistemas de Etiquetado** se refieren a cómo se nombran y categorizan los elementos dentro de la plataforma para asegurar claridad y coherencia.
+
+### Directrices de Etiquetado:
+
+- **Consistencia:** Utilizar términos uniformes en todas las secciones (e.g., "Cita Médica" en lugar de "Reserva" o "Cita").
+- **Claridad:** Los nombres deben ser descriptivos y fáciles de entender para los usuarios.
+- **Concisión:** Evitar etiquetas largas; mantener los nombres breves pero informativos.
+- **Relevancia:** Asegurarse de que las etiquetas reflejen fielmente el contenido o la función correspondiente.
+
+### Ejemplos de Etiquetas:
+
+- **Inicio**
+- **Buscar Médicos**
+- **Mis Citas**
+- **Perfil del Médico**
+- **Comparar Precios**
+- **Reseñas**
+- **Contacto**
+- **Soporte**
+- **Blog**
+- **Acerca de**
+
+### 4.2.3. SEO Tags and Meta Tags
+
+**Etiquetas SEO y Meta** son fundamentales para mejorar la visibilidad de la plataforma en motores de búsqueda y para proporcionar información esencial a los navegadores y redes sociales.
+
+### Directrices para SEO y Meta Tags:
+
+- **Title Tags:**
+  - Descriptivos y únicos para cada página.
+  - Incluir palabras clave relevantes (e.g., "Reservar Cita Médica en el Extranjero | HEALME").
+
+- **Meta Descriptions:**
+  - Resumen conciso de la página (150-160 caracteres).
+  - Incluir palabras clave y un llamado a la acción.
+
+- **Header Tags (H1, H2, H3):**
+  - Usar H1 para el título principal de la página.
+  - Utilizar H2 y H3 para subtítulos y secciones.
+
+- **Alt Text para Imágenes:**
+  - Descripciones claras y precisas de las imágenes.
+  - Incluir palabras clave cuando sea relevante.
+
+- **URL Amigables:**
+  - URLs cortas y descriptivas (e.g., `healmé.com/buscar-medicos`).
+
+- **Keywords:**
+  - Investigación y selección de palabras clave relevantes para cada sección.
+  - Integrar de manera natural en el contenido.
+
+- **Open Graph Tags:**
+  - Optimizar la apariencia de las páginas cuando se comparten en redes sociales.
+  - Incluir título, descripción, imagen y URL.
+
+### Ejemplo de Meta Tags para la Página de Inicio:
+
+```html
+<head>
+  <title>HEALME | Reserva Citas Médicas en el Extranjero</title>
+  <meta name="description" content="HEALME te permite buscar, comparar y reservar citas médicas en cualquier parte del mundo de manera rápida y transparente.">
+  <meta property="og:title" content="HEALME | Reserva Citas Médicas en el Extranjero">
+  <meta property="og:description" content="Accede a servicios médicos de calidad en tus destinos de viaje con HEALME.">
+  <meta property="og:image" content="URL_de_la_imagen">
+  <meta property="og:url" content="https://healmé.com">
+</head>
+```
+### 4.2.4. Searching Systems
+
+
+### 4.3. Landing Page UI Design. 
+
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage4.jpg)
+
+### 4.3.1. Landing Page Wireframe. 
+
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe1.jpg)
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe2.jpg)
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe3.jpg)
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe4.jpg)
+### 4.3.2. Landing Page Mock-up. 
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Frame%209%20(1)%20(1).jpg)
+<img src="assets/img/mock-up-landing-1.png">
+<img src="assets/img/mock-up-landing-2.png">
+<img src="assets/img/mock-up-landing-3.png">
+<img src="assets/img/mock-up-landing-4.png">
+<img src="assets/img/mock-up-landing-5.png">
+
+
+### 4.4. Web Applications UX/UI Design. 
+<img src="assets/img/mock-up-app-1.png">
+<img src="assets/img/mock-up-app-2.png">
+<img src="assets/img/mock-up-app-3.png">
+<img src="assets/img/mock-up-app-4.png">
+<img src="assets/img/mock-up-app-5.png">
+<img src="assets/img/mock-up-app-6.png">
+<img src="assets/img/mock-up-app-7.png">
+
+
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Login.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications4.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications5.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications6.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications7.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications8.jpg)
+
+### 4.4.1. Web Applications Wireframes. 
+<img src="assets/img/wireframe-mobile-1.png">
+<img src="assets/img/wireframe-mobile-2.png">
+<img src="assets/img/wireframe-mobile-3.png">
+    
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes4.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes5.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes6.jpg)
+
+### 4.4.2. Web Applications Wireflow Diagrams.
+link [lucidchart](https://lucid.app/lucidchart/894ea71f-a5fb-4f49-918a-7a3ba6b6542b/edit?viewport_loc=-1420%2C4811%2C5935%2C2778%2C0_0&invitationId=inv_79013474-b8a7-4bb2-913b-9eedaeeac46f)
+
+## User Goal Log in:
+El usuario inicia sesión para poder usar la aplicación
+<img src="assets/img/user-goal-login.png">
+
+## User Goal Register:
+El usuario se registra para poder usar la aplicación
+<img src="assets/img/user-goal-register.png">
+
+## User Goal Reservar cita:
+El usuario Reserva una cita eligiendo el doctor y hospital para poder asistir para que sea atendido
+<img src="assets/img/user-goal-reservar-cita.png">
+
+## User Goal ver historial de citas:
+El usuario despues de reservar su cita desea revisar el historial de citas para ver que su cita se registro correctamente
+
+<img src="assets/img/user-goal-historial-citas.png">
+
+## User Goal ver citas programadas como doctor:
+El doctor desea ver las citas programadas del paciente que lo eligió para asi poder prepararse para antenderlo
+
+<img src="assets/img/user-goal-doctor-citas.png">
+
+## User Goal ver historial de citas como doctor:
+El doctor puede visualizar el historial de citas que atendio a los pacientes
+
+<img src="assets/img/user-goal-doctor-historial.png">
+### 4.5. Web Applications Prototyping. 
+
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping4.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping5.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping6.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping7.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping8.jpg)
+
+### 4.6. Domain-Driven Software Architecture. 
+### 4.6.1. Software Architecture Context Diagram. 
+![image alt](./assets/img/diagram1.jpeg)
+### 4.6.2. Software Architecture Container Diagrams. 
+![image alt](./assets/img/diagram2.jpeg)
+### 4.6.3. Software Architecture Components Diagrams. 
+![image alt](./assets/img/diagram3.jpeg)
+
+### 4.7. Software Object-Oriented Design. 
+![image alt](./assets/img/ood.png)
+### 4.7.1. Class Diagrams.
+
+![image alt](./assets/img/diagramaoficial.png)
+
+### 4.7.2. Class Dictionary. 
+
+1. Componentes Principales (Vue.js)
+src/App.vue: Es el componente principal de la aplicación, en el que se integran otros componentes secundarios como:
+Footer
+Header
+Toolbar
+Estos subcomponentes se importan en el archivo App.vue, lo que indica que este archivo gestiona la estructura básica de la interfaz.
+
+layouts/MainLayout.component.vue: Probablemente se encarga de definir la estructura global del diseño de la aplicación, utilizando otros componentes como el Toolbar.
+
+Doctors/Doctors.component.vue: Maneja la funcionalidad relacionada con la gestión de doctores, como enDoctors y esDoctors, sugiriendo que admite múltiples idiomas. También hay un observador (watch) para detectar cambios en las propiedades.
+
+Hospitals/Hospitals.component.vue: Similar al de doctores, pero centrado en hospitales. Maneja variables como enHospitals y esHospitals para gestionar datos hospitalarios en diferentes idiomas.
+
+Products/RecommendedProducts.component.vue: Gestiona la lógica para productos recomendados, con soporte multilingüe (enRecommendedProducts, esRecommendedProducts).
+
+2. Archivos de Internacionalización (i18n)
+El diagrama muestra un soporte claro para la internacionalización (i18n):
+
+Archivos JSON como locales/en.doctors.json, locales/es.doctors.json, locales/en.hospitals.json, y locales/es.hospitals.json contienen traducciones o datos en diferentes idiomas.
+src/i18n.js: Este archivo probablemente inicializa y configura la funcionalidad de i18n en la aplicación, permitiendo la alternancia entre idiomas (en, es).
+Los archivos de locales están vinculados a componentes específicos, asegurando que los datos se muestren en el idioma correcto según el contexto.
+
+3. Rutas (Vue Router)
+src/router.js: Define las rutas de la aplicación, conectando vistas como:
+DoctorView
+DoctorViewHistory
+Hospitals
+MainImage
+RecommendedProducts
+El archivo gestiona tanto la creación de rutas como el historial de navegación (createRouter, createWebHistory), lo que permite la navegación entre las diferentes vistas de la aplicación.
+
+4. Dependencias y Estilos
+assets/main.css: Hoja de estilos CSS que contiene las reglas visuales para el proyecto.
+primeicons/primeicons.css: Se refiere a una biblioteca de iconos, probablemente utilizada en los botones o menús de la aplicación.
+assets/profile-pic.png y assets/main-image.png: Son recursos de imágenes que probablemente se utilizan en la interfaz de usuario, en componentes como el Header o Footer.
+5. Otros Componentes y Elementos Notables
+LanguageSwitcher/LanguageSwitcher.vue: Un componente que permite cambiar entre idiomas, haciendo referencia al archivo i18n.js.
+Header/Header.component.vue: Se encarga de la cabecera de la aplicación, donde también se incluye el selector de idiomas.
+Footer/Footer.component.vue: Define el pie de página de la aplicación, que podría contener enlaces importantes o información de contacto.
+Toolbar/Toolbar.component.vue: Un menú o barra de herramientas que incluye botones (Button) y un diálogo (Dialog) para la interacción con los usuarios.
+6. Gestión de Vistas y Datos
+DoctorView/DoctorViewHistory.vue y DoctorView.vue: Estas vistas están relacionadas con la visualización de información de doctores y su historial.
+Hospitals/Hospitals.component.vue: Maneja las vistas y datos relacionados con los hospitales.
+RecommendedProducts.component.vue: Se centra en la visualización y recomendación de productos.
+Conexiones Generales:
+Los componentes están bien estructurados, organizados por funcionalidad (Doctores, Hospitales, Productos).
+Se utiliza una clara estructura de rutas y manejo de datos internacionales mediante archivos de locales JSON.
+Los componentes comparten estilos comunes mediante archivos CSS y bibliotecas de iconos (primeicons).
+
+### 4.8. Database Design. 
+### 4.8.1. Database Diagram.   
 
 ## Capítulo V: Product Implementation, Validation & Deployment  
 5.1. Software Configuration Management  
