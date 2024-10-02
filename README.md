@@ -1084,49 +1084,611 @@ El **To-Be Scenario Mapping** describe el escenario actual de cómo los usuarios
 
 
 
-## Capítulo IV: Product Design  
-4.1. Style Guidelines  
-4.1.1. General Style Guidelines  
-4.1.2. Web Style Guidelines  
-4.2. Information Architecture  
-4.2.1. Organization Systems  
-4.2.2. Labeling Systems  
-4.2.3. SEO Tags and Meta Tags  
-4.2.4. Searching Systems  
-4.2.5. Navigation Systems  
-4.3. Landing Page UI Design  
-4.3.1. Landing Page Wireframe  
-4.3.2. Landing Page Mock-up  
-4.4. Web Applications UX/UI Design  
-4.4.1. Web Applications Wireframes  
-4.4.2. Web Applications Wireflow Diagrams  
-4.4.3. Web Applications Mock-ups  
-4.4.4. Web Applications User Flow Diagrams  
-4.5. Web Applications Prototyping  
-4.6. Domain-Driven Software Architecture  
-4.6.1. Software Architecture Context Diagram  
-4.6.2. Software Architecture Container Diagrams  
-4.6.3. Software Architecture Components Diagrams  
-4.7. Software Object-Oriented Design  
-4.7.1. Class Diagrams  
-4.7.2. Class Dictionary  
-4.8. Database Design  
-4.8.1. Database Diagram  
+## Capítulo IV: Product Design 
+
+## 4.1. Style Guidelines. V1.0
+
+### 4.1.1. General Style Guidelines
+
+Las **Guías Generales de Estilo** establecen las bases para mantener una apariencia y sensación coherente en toda la plataforma "HEALME". Estas directrices aseguran que todos los elementos visuales y de comunicación estén alineados con la identidad de la marca y proporcionen una experiencia de usuario óptima.
+
+### Elementos Clave:
+
+- **Identidad de Marca:**
+  - **Logo:** El logo de HEALME debe ser claro y reconocible, utilizando los colores principales de la marca.
+  - **Paleta de Colores:** Se utilizarán tonos verdes claros para títulos importantes, tonos oscuros para los fondos y tonos blancos para el texto, asegurando un contraste adecuado para una lectura fácil.
+  ![2-removebg-preview (1)](https://hackmd.io/_uploads/Sy-NxHZ2R.png)
+![HealMe Logo](https://hackmd.io/_uploads/ryErlrW20.png)
+![imagen_2024-08-31_201703420](https://hackmd.io/_uploads/SJ_9xS-hA.png)
+
+
+- **Tipografía:**
+  - **Fuente Principal:** Utilizar una fuente sans-serif moderna y legible, como **Roboto** o **Open Sans**.
+  - **Jerarquía Tipográfica:** Establecer tamaños y pesos de fuente distintos para títulos, subtítulos, cuerpo de texto y elementos destacados.
+
+- **Espaciado y Layout:**
+  - **Márgenes y Padding:** Mantener un espaciado consistente entre elementos para una apariencia limpia y ordenada.
+  - **Grid System:** Utilizar un sistema de cuadrícula para alinear y organizar el contenido de manera coherente.
+
+- **Iconografía y Gráficos:**
+  - **Estilo de Iconos:** Usar iconos simples y lineales que se integren con el diseño general.
+  - **Imágenes:** Utilizar imágenes de alta calidad que reflejen la diversidad de los usuarios y proveedores de servicios médicos.
+
+- **Tono y Voz:**
+  - **Comunicación:** Mantener un tono profesional, amigable y accesible.
+  - **Lenguaje Claro:** Evitar jerga técnica innecesaria y asegurar que la información sea comprensible para todos los usuarios.
+
+### 4.1.2. Web Style Guidelines
+
+Las **Guías de Estilo Web** se enfocan en los aspectos específicos del diseño para la plataforma digital, asegurando una experiencia de usuario consistente y atractiva.
+
+![landing](https://hackmd.io/_uploads/S1G4bHWn0.png)
+
+
+### Elementos Específicos:
+
+- **Colores:**
+  - **Títulos Importantes:** Verde claro (#A8D5BA) para resaltar títulos y llamadas a la acción.
+  - **Fondos:** Tonos oscuros (#2C3E50, #34495E) para crear un contraste elegante y profesional.
+  - **Texto:** Blanco puro (#FFFFFF) para garantizar legibilidad sobre fondos oscuros.
+
+- **Tipografía Web:**
+  - **Fuente Principal:** Roboto, Open Sans o similar para una lectura fluida en pantallas.
+  - **Tamaños:**
+    - **Título Principal (H1):** 32px
+    - **Subtítulos (H2, H3):** 24px, 20px
+    - **Cuerpo de Texto:** 16px
+    - **Pequeños Detalles:** 14px
+
+- **Botones y Elementos Interactivos:**
+  - **Botones Primarios:** Verde claro con texto blanco, borde redondeado.
+  - **Botones Secundarios:** Tonos oscuros con texto blanco.
+  - **Estados de Botón:** Hover, activo y deshabilitado deben estar claramente diferenciados.
+
+- **Imágenes y Multimedia:**
+  - **Formato:** Preferentemente JPEG o PNG para imágenes estáticas, y MP4 para videos.
+  - **Optimización:** Comprimir imágenes para mejorar tiempos de carga sin sacrificar calidad.
+
+- **Responsividad:**
+  - **Diseño Adaptable:** Asegurar que la plataforma se visualice correctamente en dispositivos móviles, tablets y desktops.
+  - **Breakpoints:** Definir puntos de quiebre para ajustar el layout según el tamaño de la pantalla.
+
+- **Accesibilidad:**
+  - **Contraste de Colores:** Asegurar que el contraste entre el texto y el fondo cumpla con los estándares de accesibilidad.
+  - **Etiquetas Alt:** Incluir descripciones alternativas en todas las imágenes para usuarios con discapacidades visuales.
+  - **Navegación con Teclado:** Garantizar que todos los elementos interactivos sean accesibles mediante el teclado.
+
+## 4.2. Information Architecture
+
+La **Arquitectura de la Información** define cómo se organiza y estructura el contenido dentro de la plataforma "HEALME", facilitando la navegación y el acceso a la información por parte de los usuarios.
+
+### 4.2.1. Organization Systems
+
+**Sistemas de Organización** determinan la manera en que se agrupan y categorizan los contenidos en la plataforma.
+
+### Estructura Principal:
+
+- **Home/Landing Page:** Introducción a HEALME, características principales, testimonios y llamadas a la acción.
+- **Buscar Servicios Médicos:** Herramienta de búsqueda avanzada por ubicación, especialidad y precio.
+- **Perfil del Proveedor:** Página individual para cada centro médico con detalles, horarios, precios y reseñas.
+- **Reservas/Citas:** Sección para gestionar reservas de citas médicas.
+- **Historial Médico:** Registro de citas pasadas y detalles de tratamientos.
+- **Sobre Nosotros:** Información sobre la startup, misión, visión y equipo.
+- **Contacto y Soporte:** Formulario de contacto, preguntas frecuentes y soporte en línea.
+- **Blog/Recursos:** Artículos y recursos relacionados con la salud y viajes.
+
+### Modelos de Organización Utilizados:
+
+- **Jerárquico:** Estructura de árbol donde la información se organiza de lo general a lo específico.
+- **Secuencial:** Flujo lógico de pasos para completar tareas, como reservar una cita.
+- **Red:** Conexiones entre diferentes secciones para facilitar el acceso rápido a información relacionada.
+
+### 4.2.2. Labeling Systems
+
+**Sistemas de Etiquetado** se refieren a cómo se nombran y categorizan los elementos dentro de la plataforma para asegurar claridad y coherencia.
+
+### Directrices de Etiquetado:
+
+- **Consistencia:** Utilizar términos uniformes en todas las secciones (e.g., "Cita Médica" en lugar de "Reserva" o "Cita").
+- **Claridad:** Los nombres deben ser descriptivos y fáciles de entender para los usuarios.
+- **Concisión:** Evitar etiquetas largas; mantener los nombres breves pero informativos.
+- **Relevancia:** Asegurarse de que las etiquetas reflejen fielmente el contenido o la función correspondiente.
+
+### Ejemplos de Etiquetas:
+
+- **Inicio**
+- **Buscar Médicos**
+- **Mis Citas**
+- **Perfil del Médico**
+- **Comparar Precios**
+- **Reseñas**
+- **Contacto**
+- **Soporte**
+- **Blog**
+- **Acerca de**
+
+### 4.2.3. SEO Tags and Meta Tags
+
+**Etiquetas SEO y Meta** son fundamentales para mejorar la visibilidad de la plataforma en motores de búsqueda y para proporcionar información esencial a los navegadores y redes sociales.
+
+### Directrices para SEO y Meta Tags:
+
+- **Title Tags:**
+  - Descriptivos y únicos para cada página.
+  - Incluir palabras clave relevantes (e.g., "Reservar Cita Médica en el Extranjero | HEALME").
+
+- **Meta Descriptions:**
+  - Resumen conciso de la página (150-160 caracteres).
+  - Incluir palabras clave y un llamado a la acción.
+
+- **Header Tags (H1, H2, H3):**
+  - Usar H1 para el título principal de la página.
+  - Utilizar H2 y H3 para subtítulos y secciones.
+
+- **Alt Text para Imágenes:**
+  - Descripciones claras y precisas de las imágenes.
+  - Incluir palabras clave cuando sea relevante.
+
+- **URL Amigables:**
+  - URLs cortas y descriptivas (e.g., `healmé.com/buscar-medicos`).
+
+- **Keywords:**
+  - Investigación y selección de palabras clave relevantes para cada sección.
+  - Integrar de manera natural en el contenido.
+
+- **Open Graph Tags:**
+  - Optimizar la apariencia de las páginas cuando se comparten en redes sociales.
+  - Incluir título, descripción, imagen y URL.
+
+### Ejemplo de Meta Tags para la Página de Inicio:
+
+```html
+<head>
+  <title>HEALME | Reserva Citas Médicas en el Extranjero</title>
+  <meta name="description" content="HEALME te permite buscar, comparar y reservar citas médicas en cualquier parte del mundo de manera rápida y transparente.">
+  <meta property="og:title" content="HEALME | Reserva Citas Médicas en el Extranjero">
+  <meta property="og:description" content="Accede a servicios médicos de calidad en tus destinos de viaje con HEALME.">
+  <meta property="og:image" content="URL_de_la_imagen">
+  <meta property="og:url" content="https://healmé.com">
+</head>
+```
+### 4.2.4. Searching Systems
+
+
+### 4.3. Landing Page UI Design. 
+
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage4.jpg)
+
+### 4.3.1. Landing Page Wireframe. 
+
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe1.jpg)
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe2.jpg)
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe3.jpg)
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Wireframe4.jpg)
+### 4.3.2. Landing Page Mock-up. 
+![](https://github.com/LuisCS341/ImagenProyecto/raw/main/Frame%209%20(1)%20(1).jpg)
+<img src="assets/img/mock-up-landing-1.png">
+<img src="assets/img/mock-up-landing-2.png">
+<img src="assets/img/mock-up-landing-3.png">
+<img src="assets/img/mock-up-landing-4.png">
+<img src="assets/img/mock-up-landing-5.png">
+
+
+### 4.4. Web Applications UX/UI Design. 
+<img src="assets/img/mock-up-app-1.png">
+<img src="assets/img/mock-up-app-2.png">
+<img src="assets/img/mock-up-app-3.png">
+<img src="assets/img/mock-up-app-4.png">
+<img src="assets/img/mock-up-app-5.png">
+<img src="assets/img/mock-up-app-6.png">
+<img src="assets/img/mock-up-app-7.png">
+
+
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Landingpage1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/Login.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications4.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications5.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications6.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications7.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplications8.jpg)
+
+### 4.4.1. Web Applications Wireframes. 
+<img src="assets/img/wireframe-mobile-1.png">
+<img src="assets/img/wireframe-mobile-2.png">
+<img src="assets/img/wireframe-mobile-3.png">
+    
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes4.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes5.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsWireframes6.jpg)
+
+### 4.4.2. Web Applications Wireflow Diagrams.
+link [lucidchart](https://lucid.app/lucidchart/894ea71f-a5fb-4f49-918a-7a3ba6b6542b/edit?viewport_loc=-1420%2C4811%2C5935%2C2778%2C0_0&invitationId=inv_79013474-b8a7-4bb2-913b-9eedaeeac46f)
+
+## User Goal Log in:
+El usuario inicia sesión para poder usar la aplicación
+<img src="assets/img/user-goal-login.png">
+
+## User Goal Register:
+El usuario se registra para poder usar la aplicación
+<img src="assets/img/user-goal-register.png">
+
+## User Goal Reservar cita:
+El usuario Reserva una cita eligiendo el doctor y hospital para poder asistir para que sea atendido
+<img src="assets/img/user-goal-reservar-cita.png">
+
+## User Goal ver historial de citas:
+El usuario despues de reservar su cita desea revisar el historial de citas para ver que su cita se registro correctamente
+
+<img src="assets/img/user-goal-historial-citas.png">
+
+## User Goal ver citas programadas como doctor:
+El doctor desea ver las citas programadas del paciente que lo eligió para asi poder prepararse para antenderlo
+
+<img src="assets/img/user-goal-doctor-citas.png">
+
+## User Goal ver historial de citas como doctor:
+El doctor puede visualizar el historial de citas que atendio a los pacientes
+
+<img src="assets/img/user-goal-doctor-historial.png">
+### 4.5. Web Applications Prototyping. 
+
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping1.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping2.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping3.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping4.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping5.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping6.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping7.jpg)
+![image alt](https://github.com/LuisCS341/ImagenProyecto/raw/main/WebApplicationsPrototyping8.jpg)
+
+### 4.6. Domain-Driven Software Architecture. 
+### 4.6.1. Software Architecture Context Diagram. 
+![image alt](./assets/img/diagram1.jpeg)
+### 4.6.2. Software Architecture Container Diagrams. 
+![image alt](./assets/img/diagram2.jpeg)
+### 4.6.3. Software Architecture Components Diagrams. 
+![image alt](./assets/img/diagram3.jpeg)
+
+### 4.7. Software Object-Oriented Design. 
+![image alt](./assets/img/ood.png)
+### 4.7.1. Class Diagrams.
+
+![image alt](./assets/img/diagramaoficial.png)
+
+### 4.7.2. Class Dictionary. 
+
+1. Componentes Principales (Vue.js)
+src/App.vue: Es el componente principal de la aplicación, en el que se integran otros componentes secundarios como:
+Footer
+Header
+Toolbar
+Estos subcomponentes se importan en el archivo App.vue, lo que indica que este archivo gestiona la estructura básica de la interfaz.
+
+layouts/MainLayout.component.vue: Probablemente se encarga de definir la estructura global del diseño de la aplicación, utilizando otros componentes como el Toolbar.
+
+Doctors/Doctors.component.vue: Maneja la funcionalidad relacionada con la gestión de doctores, como enDoctors y esDoctors, sugiriendo que admite múltiples idiomas. También hay un observador (watch) para detectar cambios en las propiedades.
+
+Hospitals/Hospitals.component.vue: Similar al de doctores, pero centrado en hospitales. Maneja variables como enHospitals y esHospitals para gestionar datos hospitalarios en diferentes idiomas.
+
+Products/RecommendedProducts.component.vue: Gestiona la lógica para productos recomendados, con soporte multilingüe (enRecommendedProducts, esRecommendedProducts).
+
+2. Archivos de Internacionalización (i18n)
+El diagrama muestra un soporte claro para la internacionalización (i18n):
+
+Archivos JSON como locales/en.doctors.json, locales/es.doctors.json, locales/en.hospitals.json, y locales/es.hospitals.json contienen traducciones o datos en diferentes idiomas.
+src/i18n.js: Este archivo probablemente inicializa y configura la funcionalidad de i18n en la aplicación, permitiendo la alternancia entre idiomas (en, es).
+Los archivos de locales están vinculados a componentes específicos, asegurando que los datos se muestren en el idioma correcto según el contexto.
+
+3. Rutas (Vue Router)
+src/router.js: Define las rutas de la aplicación, conectando vistas como:
+DoctorView
+DoctorViewHistory
+Hospitals
+MainImage
+RecommendedProducts
+El archivo gestiona tanto la creación de rutas como el historial de navegación (createRouter, createWebHistory), lo que permite la navegación entre las diferentes vistas de la aplicación.
+
+4. Dependencias y Estilos
+assets/main.css: Hoja de estilos CSS que contiene las reglas visuales para el proyecto.
+primeicons/primeicons.css: Se refiere a una biblioteca de iconos, probablemente utilizada en los botones o menús de la aplicación.
+assets/profile-pic.png y assets/main-image.png: Son recursos de imágenes que probablemente se utilizan en la interfaz de usuario, en componentes como el Header o Footer.
+5. Otros Componentes y Elementos Notables
+LanguageSwitcher/LanguageSwitcher.vue: Un componente que permite cambiar entre idiomas, haciendo referencia al archivo i18n.js.
+Header/Header.component.vue: Se encarga de la cabecera de la aplicación, donde también se incluye el selector de idiomas.
+Footer/Footer.component.vue: Define el pie de página de la aplicación, que podría contener enlaces importantes o información de contacto.
+Toolbar/Toolbar.component.vue: Un menú o barra de herramientas que incluye botones (Button) y un diálogo (Dialog) para la interacción con los usuarios.
+6. Gestión de Vistas y Datos
+DoctorView/DoctorViewHistory.vue y DoctorView.vue: Estas vistas están relacionadas con la visualización de información de doctores y su historial.
+Hospitals/Hospitals.component.vue: Maneja las vistas y datos relacionados con los hospitales.
+RecommendedProducts.component.vue: Se centra en la visualización y recomendación de productos.
+Conexiones Generales:
+Los componentes están bien estructurados, organizados por funcionalidad (Doctores, Hospitales, Productos).
+Se utiliza una clara estructura de rutas y manejo de datos internacionales mediante archivos de locales JSON.
+Los componentes comparten estilos comunes mediante archivos CSS y bibliotecas de iconos (primeicons).
+
+### 4.8. Database Design. 
+### 4.8.1. Database Diagram.   
 
 ## Capítulo V: Product Implementation, Validation & Deployment  
 5.1. Software Configuration Management  
 5.1.1. Software Development Environment Configuration  
+
+Para el desarrollo de nuestro proyecto Usaremos webstorm, lo hemos dividido en 2 partes, uno el landing page donde se usará javascript, html y css , en la aplicación web utilizaremos Vue.js como framework de javascript, también se utilizará HTML ya que principalmente se encarga de este tipo de proyectos y completamos con CSS para agregar estética.
+
 5.1.2. Source Code Management  
-5.1.3. Source Code Style Guide & Conventions  
+
+Github Desktop es una aplicación de código abierto que ayuda a trabajar con código hospedado en github u otros servicios de hospedaje de Git. Contamos con 2 repositorios en Github , el primero es donde está el landing page y el segundo es donde están los criterios de aceptación.
+
+
+Repositorio donde esta el landing page y la documentacion (https://github.com/HealMe-Team/HealMe)
+
+Repositorio donde esta la aplicación web (https://github.com/HealMe-Team/Heal-Me-APP)
+
+
+5.1.3. Source Code Style Guide & Conventions 
+
+En nuestro proyecto basado en Vue.js es esencial establecer un estilo de codificación para tener coherencia y código limpio en el proyecto. Nos apoyaremos con la guía oficial de Vue, tomando esto en cuenta cumpliremos con tener un código limpio y coherente.
+
 5.1.4. Software Deployment Configuration  
+
+ Evidencia del deploy
+ 
+![Screenshot_1](https://hackmd.io/_uploads/SJ0gQLX20.jpg)
+
+![Screenshot_2](https://hackmd.io/_uploads/BylEQLXhC.jpg)
+
+![Screenshot_3](https://hackmd.io/_uploads/BJ9q7U7hR.jpg)
+
 5.2. Landing Page, Services & Applications Implementation  
-5.2.1. Sprint n  
-5.2.1.1. Sprint Planning n  
+5.2.1. Sprint 1  
+5.2.1.1. Sprint Planning 1  
+
+| Sprint#                       | Sprint 1                                |
+|-------------------------------|-----------------------------------------|
+| **Sprint Planning Background** |                                         |
+| Date                           | 2024-08-28                              |
+| Time                           | 3:22                                    |
+| Location                       | Reunión virtual realizada en Discord     |
+| Prepared By                    | Alcántara Cruz Rodrigo Alonso           |
+| Attendees (to planning meeting)| -Cuevas Vera, José Angel,Alonso Garay, Diego Jesús,Roque Tello, Jack Eddie, Cisneros Salas, Luis Angel, Alcántara Cruz Rodrigo Alonso                   |
+| **Sprint n - 1 Review Summary**| Avanzar el landing page y brindar sugerencias para el estilo de la página |
+| **Sprint n-1 Retrospective Summary** | Se destacó la importancia de completar el landing page para nuestro proyecto |
+| **Sprint Goal & User Stories** |                                         |
+| Sprint n Goal                  | El objetivo que tenemos es mejorar las funcionalidades de la página web, por ahora hemos agregado el contactenos, nos falta el log in y register |
+| Sprint n Velocity              | Para nuestro sprint el equipo ha establecido la escala Fibonacci para así determinar la complejidad del tiempo de elaboración. |
+| Sum of Story Points            |  De momento no hemoc cumplido los user stories por que aun esta en desarrollo la app web                                     |
+
+### Objetivo Principal del Sprint
+
+El objetivo principal del Sprint 1 es implementar las funcionalidades básicas de la plataforma HealMe, que incluyen el inicio de sesión de usuarios, la capacidad de reservar citas médicas, y la visualización del historial de citas. Además, se busca implementar las notificaciones de confirmación de reserva.
+
+
 5.2.1.2. Sprint Backlog n  
+
+| **User Story ID** | **Título**                                | **Work-Item/Task ID** | **Título**                          | **Descripción**                                                                                                                     | **Estimación (Horas)** | **Asignado a** | **Estado**            |
+|-------------------|-------------------------------------------|-----------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------|-----------------------|
+| US-01             | Buscar y agregar medicinas al carrito      | TSK-001               | Crear funcionalidad de búsqueda     | Implementar la funcionalidad de búsqueda de medicinas y la capacidad de agregar productos al carrito de compra.                      | 12                     | Rodrigo            | In-Process            |
+| US-02             | Realizar el pago de las medicinas          | TSK-002               | Integrar sistema de pagos           | Configurar e integrar un sistema de pagos seguro para la compra de medicinas.                                                        | 8                      | Rodrigo         | To-Do                 |
+| US-03             | Buscar y seleccionar un doctor             | TSK-003               | Crear pantalla de selección de doctor | Desarrollar la interfaz para que los usuarios puedan buscar, ver perfiles y seleccionar doctores disponibles para consultas.          | 10                     | Diego          | In-Process            |
+| US-04             | Ver el historial de citas                  | TSK-004               | Crear pantalla de historial de citas | Implementar la funcionalidad que permite a los usuarios visualizar su historial de citas, con detalles como fecha, hora y doctor.     | 8                      | Diego           | To-Do                 |
+| US-05             | Reservar una cita médica                   | TSK-005               | Crear sistema de reserva            | Implementar la interfaz y backend para que los usuarios puedan reservar citas médicas seleccionando fecha y hora.                    | 12                     | Diego          | In-Process            |
+| US-05             | Reservar una cita médica                   | TSK-006               | Mostrar mensaje de confirmacion       | Implementar el sistema de mensaje de confirmacion de la cita medica                   | 4                      | Diego          | To-Do                 |
+| US-07             | Registrarme en la aplicación               | TSK-007               | Crear formulario de registro        | Desarrollar la funcionalidad para que los usuarios puedan registrarse con sus datos personales, correo electrónico y contraseña.     | 10                     | Luis           | To-Do                 |
+| US-09             | Ver y elegir un centro médico              | TSK-008               | Mostrar lista de centros médicos    | Implementar la pantalla que muestra la lista de centros médicos con detalles y filtros como ubicación y especialidades disponibles.   | 8                      | Luis        | In-Process            |
+| US-10             | Ver citas pendientes del doctor            | TSK-009               | Crear vista de citas pendientes     | Desarrollar la funcionalidad que permite al doctor visualizar las citas pendientes y filtrar por fechas.                             | 5                      | Diego          | In-Process            |
+| US-11             | Ver historial de citas terminadas del doctor| TSK-010               | Mostrar historial de citas          | Implementar la funcionalidad que permite al doctor ver el historial de citas completadas, con detalles de cada paciente atendido.     | 6                      | Luis          | To-Do                 |
+
+
+
 5.2.1.3. Development Evidence for Sprint Review  
+
+### Sprint 1
+
+En este Sprint, hemos logrado implementar las funcionalidades principales de la plataforma HealMe, como la reserva de citas médicas, la confirmación de reservas, y la visualización del historial de citas. Estas implementaciones corresponden a las secciones críticas de la plataforma, permitiendo a los usuarios acceder a servicios médicos en ubicaciones desconocidas. A continuación, se presentan los avances en la implementación a través de los commits realizados en los repositorios involucrados en el desarrollo de estas funcionalidades.
+
+
+| **Repository**   | **Branch**   | **Commit ID** | **Commit Message**             | **Commit Message Body**                                                       | **Committed on (Date)** |
+|------------------|--------------|---------------|--------------------------------|--------------------------------------------------------------------------------|-------------------------|
+|  Healme  |  main  |    index.html   |      index.html file added           |       Landing Added      | 2024-09-01              |
+
+
 5.2.1.4. Testing Suite Evidence for Sprint Review  
+
+Durante este Sprint, se realizaron pruebas automatizadas para asegurar el correcto funcionamiento de los Web Services relacionados con los User Stories especificados. Se desarrollaron Unit Tests, Integration Tests, y Acceptance Tests utilizando el enfoque BDD. Las pruebas abarcaron funcionalidades como búsqueda de clínicas, reserva de citas médicas y manejo del perfil de usuario.
+
+| **Repository**      | **Branch**           | **Commit ID** | **Commit Message**                              | **Commit Message Body**                                                                  | **Committed on (Date)** |
+|---------------------|----------------------|---------------|-------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------|
+| Healme      | main         | US-003.feature       | Create US-003.feature          | Añadido del Acceptance-Test.                      | 2024-09-03              |
+| Healme      | main         | US-005.feature       | Create US-005.feature          | Añadido del Acceptance-Test.                      | 2024-09-04              |
+| Healme      | main         | US-006.feature       | Create US-006.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+| Healme      | main         | US-009.feature       | Create US-009.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+
+
 5.2.1.5. Execution Evidence for Sprint Review  
-5.2.1.6. Services Documentation Evidence for Sprint Review  
+
+Aqui mostramos la evidencia del landing page
+En el landing page tenemos un about us para poder informar al usuario que servicio ofrecemos, el landing page tambien cuenta con un sistema de reseñas para que el usuario pueda ver comentarios de otros usuarios.
+
+![Screenshot_3](https://hackmd.io/_uploads/BJ9q7U7hR.jpg)
+
+
+5.2.1.6. Services Documentation Evidence for Sprint Review
+
+## Servicios Documentación Evidencia para la Revisión del Sprint
+
+### Introducción
+Durante este Sprint, hemos logrado documentar los servicios web relacionados con la plataforma "HEALME". La documentación incluye los endpoints que pronto se implemetarán, describiendo las acciones soportadas, verbos HTTP, parámetros, y ejemplos de respuestas. Esta sección proporciona una visión general de los endpoints desarrollados y su integración con la plataforma. (estan en proceso)
+
+| **Endpoint**       | **Acción Implementada**          | **Verbo HTTP** | **Sintaxis de Llamada**                         | **Parámetros**                    | **Ejemplo de Response**          | **Explicación del Response**                                               |
+|--------------------|---------------------------------|----------------|-------------------------------------------------|----------------------------------|----------------------------------|---------------------------------------------------------------------------|
+| /clinics/search    | Buscar clínicas cercanas         | GET            | `/clinics/search?location={location}`           | location (string)                | `{ "clinics": [ ... ] }`         | Lista de clínicas cercanas con detalles básicos.                           |
+| /clinics/filter    | Filtrar clínicas por especialidad| GET            | `/clinics/filter?specialty={specialty}`         | specialty (string)               | `{ "clinics": [ ... ] }`         | Lista de clínicas que ofrecen la especialidad seleccionada.                |
+| /clinics/compare   | Comparar clínicas                | POST           | `/clinics/compare`                              | clinic_ids (array of strings)    | `{ "comparison": { ... } }`      | Comparación de clínicas seleccionadas basada en calificaciones y precios. |
+| /clinics/{id}      | Detalles de la clínica           | GET            | `/clinics/{id}`                                 | id (string)                      | `{ "clinic": { ... } }`          | Detalles completos de la clínica específica.                              |
+| /appointments      | Reservar cita médica             | POST           | `/appointments`                                 | clinic_id (string), date (string), time (string) | `{ "appointment": { ... } }` | Confirmación de la reserva de cita médica.                                |
+| /appointments/{id} | Confirmación de la reserva       | GET            | `/appointments/{id}`                            | id (string)                      | `{ "appointment": { ... } }`     | Confirmación de detalles de la cita médica.                               |
+| /clinics/{id}/map  | Ver ubicación de la clínica      | GET            | `/clinics/{id}/map`                             | id (string)                      | `{ "map_url": "url" }`           | URL del mapa con la ubicación de la clínica.                               |
+| /navigation        | Navegar hasta la clínica          | GET            | `/navigation?clinic_id={clinic_id}&current_location={current_location}` | clinic_id (string), current_location (string) | `{ "directions": [ ... ] }`  | Instrucciones de navegación desde la ubicación actual hasta la clínica.    |
+| /profile           | Crear perfil de usuario           | POST           | `/profile`                                      | user_info (object)               | `{ "profile": { ... } }`         | Confirmación de la creación del perfil del usuario.                        |
+| /profile/{id}      | Actualizar perfil de usuario      | PUT            | `/profile/{id}`                                 | id (string), user_info (object)  | `{ "profile": { ... } }`         | Confirmación de la actualización del perfil del usuario.                   |                 |
+
+### Capturas de Pantalla
+
+![image](https://github.com/user-attachments/assets/9bd760c4-d313-4bc2-9df0-9b482ba83e45)
+
+
 5.2.1.7. Software Deployment Evidence for Sprint Review  
+
+## Software Deployment Evidencia para la Revisión del Sprint
+Aqui hay una evidencia de que se ha hecho un deploy, se adjunta el link: https://roiander.github.io/HealMe/
+
+Se evidencia las funcionalidades del landing page y se muestra la informacion del producto.
+
+![image](https://github.com/user-attachments/assets/a5e56dfe-7421-44ea-8b35-6d32cadcefd0)
+
+
 5.2.1.8. Team Collaboration Insights during Sprint  
+
+Para el desarrollo de la primera versión de la plataforma, el equipo realizó el trabajo de forma colaborativa y equitativa. En la siguiente tabla se mostrará la relación que posee cada integrante y las estadísticas de sus commits.
+
+| Integrantes                           | Usuario          | Rol        |
+|---------------------------------------|------------------|------------|
+| Alonso Garay, Diego Jesus             | DiegoAlonso04    | Colaborador|
+| Cisneros Salas, Luis Angel    | LuisCS341 | Colaborador|
+| Alcántara Cruz, Rodrigo Alonso    | Roiander | Admin |
+
+![image](https://github.com/user-attachments/assets/601ca4c4-3a66-42e7-a041-378c44daf594)
+
+### 5.2.2. Sprint 2 
+
+5.2.2.1. Sprint Planning 2
+
+| Sprint#                       | Sprint 2                                |
+|-------------------------------|-----------------------------------------|
+| **Sprint Planning Background** |                                         |
+| Date                           | 2024-08-28                              |
+| Time                           | 10:12                                    |
+| Location                       | Reunión virtual realizada en Discord     |
+| Prepared By                    | Alcántara Cruz Rodrigo Alonso           |
+| Attendees (to planning meeting)| Diego Jesús Alonso Garay, Luis Cisneros Salas, Alcántara Cruz Rodrigo Alonso                   |
+| **Sprint n - 1 Review Summary**| Avanzar la primera version de HealMe |
+| **Sprint n-1 Retrospective Summary** | Se destacó la importancia de avanzar la app web para nuestro proyecto |
+| **Sprint Goal & User Stories** |                                         |
+| Sprint n Goal                  | El objetivo que tenemos es implementar los routes para que el toolbar redirija a otras funcionalidades de la app |
+| Sprint n Velocity              | Para nuestro sprint el equipo ha establecido la escala Fibonacci para así determinar la complejidad del tiempo de elaboración. |
+| Sum of Story Points            |  De momento no hemoc cumplido los user stories por que aun esta en desarrollo la app web                                     |
+
+### 5.2.2.2. Sprint Backlog 2. 
+
+### Sprint 2
+
+### Objetivo Principal del Sprint
+
+El objetivo principal del Sprint 2 es implementar las funcionalidades básicas de la plataforma HealMe, que incluyen el inicio de sesión de usuarios, la capacidad de reservar citas médicas, y la visualización del historial de citas. Además, se busca implementar las notificaciones de confirmación de reserva.
+
+Enlace del sprint en Trello: https://trello.com/invite/b/66da07a121d7f4b87735bab5/ATTI5580c46e73dbba23538e9fcb71477cfdBCAAB835/sprint-healme
+
+### Tabla del Sprint Backlog
+
+## Sprint Backlog 
+
+| **User Story ID** | **Título**                                | **Work-Item/Task ID** | **Título**                          | **Descripción**                                                                                                                     | **Estimación (Horas)** | **Asignado a** | **Estado**            |
+|-------------------|-------------------------------------------|-----------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------|-----------------------|
+| US-01             | Buscar y agregar medicinas al carrito      | TSK-001               | Crear funcionalidad de búsqueda     | Implementar la funcionalidad de búsqueda de medicinas y la capacidad de agregar productos al carrito de compra.                      | 12                     | Rodrigo        | Done                  |
+| US-02             | Realizar el pago de las medicinas          | TSK-002               | Integrar sistema de pagos           | Configurar e integrar un sistema de pagos seguro para la compra de medicinas.                                                        | 8                      | Rodrigo        | Done                  |
+| US-03             | Buscar y seleccionar un doctor             | TSK-003               | Crear pantalla de selección de doctor | Desarrollar la interfaz para que los usuarios puedan buscar, ver perfiles y seleccionar doctores disponibles para consultas.          | 10                     | Diego          | Done                  |
+| US-04             | Ver el historial de citas                  | TSK-004               | Crear pantalla de historial de citas | Implementar la funcionalidad que permite a los usuarios visualizar su historial de citas, con detalles como fecha, hora y doctor.     | 8                      | Diego          | Done                  |
+| US-05             | Reservar una cita médica                   | TSK-005               | Crear sistema de reserva            | Implementar la interfaz y backend para que los usuarios puedan reservar citas médicas seleccionando fecha y hora.                    | 12                     | Diego          | Done                  |
+| US-05             | Reservar una cita médica                   | TSK-006               | Mostrar mensaje de confirmación     | Implementar el sistema de mensaje de confirmación de la cita médica                                                                  | 4                      | Diego          | Done                  |
+| US-07             | Registrarme en la aplicación               | TSK-007               | Crear formulario de registro        | Desarrollar la funcionalidad para que los usuarios puedan registrarse con sus datos personales, correo electrónico y contraseña.     | 10                     | Luis           | Done                  |
+| US-09             | Ver y elegir un centro médico              | TSK-008               | Mostrar lista de centros médicos    | Implementar la pantalla que muestra la lista de centros médicos con detalles y filtros como ubicación y especialidades disponibles.   | 8                      | Luis           | Done                  |
+| US-10             | Ver citas pendientes del doctor            | TSK-009               | Crear vista de citas pendientes     | Desarrollar la funcionalidad que permite al doctor visualizar las citas pendientes y filtrar por fechas.                             | 5                      | Diego          | Done                  |
+| US-11             | Ver historial de citas terminadas del doctor| TSK-010               | Mostrar historial de citas          | Implementar la funcionalidad que permite al doctor ver el historial de citas completadas, con detalles de cada paciente atendido.     | 6                      | Luis           | Done                  |
+
+### 5.2.2.3. Development Evidence for Sprint Review. 
+
+### Sprint 2
+
+En este Sprint, hemos logrado implementar las funcionalidades principales de la plataforma HealMe de forma completa, como la reserva de citas médicas, la confirmación de reservas, y la visualización del historial de citas. Estas implementaciones corresponden a las secciones críticas de la plataforma, permitiendo a los usuarios acceder a servicios médicos en ubicaciones desconocidas. A continuación, se presentan los avances en la implementación a través de los commits realizados en los repositorios involucrados en el desarrollo de estas funcionalidades.
+
+
+| **Repository**   | **Branch**   | **Commit ID** | **Commit Message**             | **Commit Message Body**                                                       | **Committed on (Date)** |
+|------------------|--------------|---------------|--------------------------------|--------------------------------------------------------------------------------|-------------------------|
+|  Heal-Me-APP  |  main  |   update app  |      proyect          |       App finished     | 2024-09-24              |
+
+### 5.2.2.4. Testing Suite Evidence for Sprint Review. 
+
+Durante este Sprint, se realizaron pruebas automatizadas para asegurar el correcto funcionamiento de los Web Services relacionados con los User Stories especificados. Se desarrollaron Unit Tests, Integration Tests, y Acceptance Tests utilizando el enfoque BDD. Las pruebas abarcaron funcionalidades como búsqueda de clínicas, reserva de citas médicas y manejo del perfil de usuario.
+
+| **Repository**      | **Branch**           | **Commit ID** | **Commit Message**                              | **Commit Message Body**                                                                  | **Committed on (Date)** |
+|---------------------|----------------------|---------------|-------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------|
+| Healme      | main         | US-003.feature       | Create US-003.feature          | Añadido del Acceptance-Test.                      | 2024-09-03              |
+| Healme      | main         | US-005.feature       | Create US-005.feature          | Añadido del Acceptance-Test.                      | 2024-09-04              |
+| Healme      | main         | US-006.feature       | Create US-006.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+| Healme      | main         | US-009.feature       | Create US-009.feature          | Añadido del Acceptance-Test.                      | 2024-09-05              |
+
+### 5.2.2.5. Execution Evidence for Sprint Review. 
+Aqui mostramos la evidencia de la aplicacion web
+En la aplicacion cumplimos con las funcionalidades de reservar cita, ver historial de citas, confirmacion de la cita reservada, venta de productos medicos, reseñas de hospitales y doctores, eleccion de horarios, hospitals y doctores para la cita medica. En caso de los doctores tambien cumplimos todo, se ha implementado el poder visualizar las citas reservadas por los usuarios y se puede ver la hora, fecha , detalles del paciente y tambien se ha implementado el boton para poder ver el historial de citas como doctor.
+
+<img src="assets/img/deploy-1.png">
+
+<img src="assets/img/deploy-2.png">
+
+<img src="assets/img/deploy-3.png">
+
+<img src="assets/img/deploy-4.png">
+
+<img src="assets/img/deploy-5.png">
+
+<img src="assets/img/deploy-6.png">
+
+<img src="assets/img/deploy-7.png">
+
+### 5.2.2.6. Services Documentation Evidence for Sprint Review. 
+## Servicios Documentación Evidencia para la Revisión del Sprint
+
+### Introducción
+Durante este Sprint, hemos logrado documentar los servicios web relacionados con la plataforma "HEALME". La documentación incluye los endpoints que pronto se implemetarán, describiendo las acciones soportadas, verbos HTTP, parámetros, y ejemplos de respuestas. Esta sección proporciona una visión general de los endpoints desarrollados y su integración con la plataforma. (estan en proceso)
+
+| **Endpoint**                | **Acción Implementada**                          | **Verbo HTTP** | **Sintaxis de Llamada**                                      | **Parámetros**                                     | **Ejemplo de Response**              | **Explicación del Response**                                                   |
+|-----------------------------|--------------------------------------------------|----------------|--------------------------------------------------------------|---------------------------------------------------|--------------------------------------|-------------------------------------------------------------------------------|
+| /doctor                     | Ver lista de doctores                           | GET            | `/doctor`                                                    | -                                                 | `{ "doctors": [ ... ] }`             | Lista de doctores disponibles con detalles básicos.                           |
+| /hospitals                  | Visualizar hospitales o clínicas disponibles    | GET            | `/hospitals`                                                 | -                                                 | `{ "hospitals": [ ... ] }`           | Lista de hospitales o clínicas disponibles.                                   |
+| /appointments               | Reservar cita médica                            | POST           | `/appointments`                                              | clinic_id (string), date (string), time (string)  | `{ "appointment": { ... } }`         | Confirmación de la reserva de una cita médica.                                |
+| /products                   | Ver productos disponibles para la compra        | GET            | `/products`                                                  | -                                                 | `{ "products": [ ... ] }`            | Lista de productos disponibles para la compra.                                |
+| /appointments/{id}          | Ver confirmación de la reserva de cita          | GET            | `/appointments/{id}`                                         | id (string)                                      | `{ "appointment": { ... } }`         | Detalles de la cita médica confirmada.                                        |
+| /doctor-view                | Ver vista del doctor                            | GET            | `/doctor-view?clinic_id={clinic_id}&current_location={current_location}` | clinic_id (string), current_location (string)   | `{ "directions": [ ... ] }`          | Instrucciones de navegación desde la ubicación actual hasta la clínica.       |
+| /doctor-view/history        | Ver historial de citas de sus pacientes         | GET            | `/doctor-view/history`                                       | -                                                 | `{ "history": [ ... ] }`             | Historial de citas de los pacientes del doctor.                               |
+| /doctor-view/appointments   | Ver las citas programadas por sus pacientes     | GET            | `/doctor-view/appointments`                                  | -                                                 | `{ "appointments": [ ... ] }`        | Lista de citas programadas por los pacientes del doctor.                      |
+
+Commits of the team :
+
+<img src="assets/img/commits-image-tp.png">
+
+
+### Conclusiones 
+- Hemos llegado a la conslusion de que la elaboracion del proyecto de la aplicacion HealMe es fundamental para casi todo el mundo, pues estamos brindando informacion medica de calidad a extranjeros y locales para que no tengan dificultades al solicitar atencion medica por un viaje, etc.
+- El trabajo en equipo es fundamental para la culminacion del trabajo , fomentando un buen ambiente para todos los integrantes.
+- La implementacion de tecnologías usando la navegacion a internet para poder completar el trabajo es fundamental ya que debemos acostumbrarnos a mantener un aprendizaje continuo para poder alcanzar mejores metas como profesionales.
+- Se llego a la conclusion que la medicina peruana y la programacion pueden trabajar en equipo para poder alcanzar una cantidad mayor de usuarios siende beneficiosa para ambos sectores.
+
+
+### Referencias bibliograficas
+
+Vue.js. (s. f.). https://vuejs.org/guide/introduction.html
+
+PrimeVue | Vue UI Component Library. (s. f.). https://primevue.org/introduction/
+
+Stack Overflow - where developers learn, share, & build careers. (s. f.). Stack Overflow. https://stackoverflow.com/
+
 
