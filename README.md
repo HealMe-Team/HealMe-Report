@@ -1023,10 +1023,66 @@ El **As-is Scenario Mapping** describe el escenario actual de cómo los usuarios
 
 
 ## Capítulo III: Requirements Specification  
-3.1. To-Be Scenario Mapping  
-3.2. User Stories  
-3.3. Impact Mapping  
-3.4. Product Backlog  
+## 3.1. To-Be Scenario Mapping. 
+
+El **To-Be Scenario Mapping** describe el escenario actual de cómo los usuarios resuelven sus problemas con nuestra solución, subsanando las ineficiencias y puntos de dolor.
+
+<img src="assets/img/to-be-medico.png">
+<img src="assets/img/to-be-turista.png">
+
+
+## 3.2. User Stories. 
+
+| **Epic ID** | **Título**                                      | **Descripción**                                                                                   |
+|-------------|-------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| EP-01      | Comprar medicinas en la aplicación              | Implementar la funcionalidad que permita a los usuarios comprar medicinas de manera online.               |
+| EP-02      | Elegir el doctor que desea                      | Permitir a los usuarios poder elegir el doctor el cual desee ser medicado.                                |
+| EP-03      | Reserva de citas médicas                        | Habilitar la funcionalidad para que los usuarios reserven citas médicas directamente desde la plataforma. |
+| EP-04      | Registrarme en la aplicación                    | Permitir a los usuarios Poder registrarse en la aplicación.                                               |
+| EP-05      | Elegir el centro medico disponible              | El usuario puede elegir a que centro de salud desea visitar para ser atendido                             |
+| EP-06      | Poder ver las citas pendientes de los pacientes              | El Doctor puede visualizar los datos del paciente para su cita como hora, edad, etc.                             |
+| EP-07      | Poder visualizar el historial de citas terminadas              | El Doctor puede visualizar las citas que ya han sido terminadas con los datos de los pacientes                             |
+
+
+| **User Story ID** | **Epic ID** | **Descripción**                                                                                                                                 | **Criterios de Aceptación**                                                                                                                                                                                                                                             |
+|-------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| US-01             | EP-01       | Como usuario, quiero poder buscar y agregar medicinas a mi carrito de compra para poder adquirirlas fácilmente desde la aplicación.               | - El usuario debe poder buscar medicinas por nombre, categoría o síntomas.<br> - El usuario debe poder ver los detalles del producto (nombre, descripción, precio, dosis).<br> - El usuario debe poder agregar la medicina al carrito de compra.<br> - El carrito debe mostrar el total actualizado.   |
+| US-02             | EP-01       | Como usuario, quiero poder realizar el pago de las medicinas en línea de manera segura para completar mi compra.                                 | - El usuario puede pagar las medicinas con un botón.<br> - El sistema debe validar la información de pago antes de completar la transacción.<br>|
+| US-03             | EP-02       | Como usuario, quiero poder buscar y seleccionar a un doctor.                            | - El usuario debe poder elegir a los doctores que el desee.<br> - El usuario debe poder ver el perfil del doctor, incluyendo sus reseñas y horarios disponibles.<br> - El usuario debe poder seleccionar un doctor y reservar una cita.      |
+| US-04             | EP-02       | Como usuario, quiero poder ver el historial de citas                       | - El usuario debe poder visualizar las citas creadas.<br> - El sistema debe permitir al usuario mostrar el historial de citas con datos importantes, como fecha y hora.<br>                                    |
+| US-05             | EP-03       | Como usuario, quiero poder reservar una cita médica en la aplicación para poder ser atendido sin tener que llamar al centro médico.             | - El usuario debe poder seleccionar la fecha y la hora para la cita.<br> - El usuario debe recibir una confirmación de la reserva de la cita.<br>                          |
+| US-06             | EP-03       | Como usuario, quiero poder ver las reseñas de los centros medicos y de los doctores                                                 | - El usuario debe poder ver reseñas de los centros medicos.<br> - El usuario debe poder visualizar las reseñas de los doctores .<br>     |
+| US-07             | EP-04       | Como usuario, quiero poder registrarme en la aplicación utilizando mi correo electrónico y una contraseña segura para acceder a las funcionalidades. | - El usuario debe poder completar un formulario de registro con campos obligatorios (nombre, correo electrónico, contraseña).<br> - La contraseña debe cumplir con requisitos mínimos de seguridad.<br> - El sistema debe enviar un correo de verificación.<br> - El usuario debe recibir confirmación. |
+| US-08             | EP-04       | Como usuario, quiero poder iniciar sesión en la aplicación con mi cuenta registrada para acceder a mi perfil y servicios.                        | - El usuario debe poder iniciar sesión utilizando su correo electrónico y contraseña registrados.<br> - El sistema debe validar las credenciales antes de permitir el acceso.<br> - El usuario debe poder recuperar su contraseña mediante un enlace de restablecimiento. |
+| US-09             | EP-05       | Como usuario, quiero poder ver una lista de los centros médicos disponibles y elegir uno para mi consulta.                                      | - El usuario debe poder ver una lista de centros médicos con detalles como nombre, dirección, y servicios ofrecidos.<br> - El usuario debe poder filtrar los centros médicos por ubicación, especialidades y calificación.<br> - Debe poder seleccionar un centro médico para ver más detalles y agendar.   |
+| US-10             | EP-06       | Como Doctor, quiero poder ver las citas pendientes para poder atender a mis pacientes                                      | - El Doctordebe poder ver una lista donde se visualize las citas programadas .<br> - El usuario debe poder filtrar las citas en base a fechas.<br> |
+| US-11             | EP-07       | Como Doctor, quiero poder ver el historial de citas con mis pacientes                                      | - El Doctor debe poder ver una lista del historial de las citas terminadas.<br> - El usuario debe poder filtrar las citas terminadas.<br> - Debe poder ver datos de los pacientes.   |
+
+
+## 3.3. Impact Mapping. 
+
+<img src="assets/img/Juan-Perez-impactmap.png">
+<img src="assets/img/Laura-Gomez-impactmap.png">
+
+## 3.4. Product Backlog.
+
+
+| **# Orden** | **User Story ID** | **Título**                            | **Descripción**                                                                                                           | **Story Points** |
+|-------------|-------------------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------|------------------|
+| 1           | US-01             | Buscar y agregar medicinas al carrito | Como usuario, quiero poder buscar y agregar medicinas a mi carrito de compra para poder adquirirlas fácilmente desde la aplicación. | 5                |
+| 2           | US-02             | Realizar el pago de las medicinas     | Como usuario, quiero poder realizar el pago de las medicinas en línea de manera segura para completar mi compra.           | 5                |
+| 3           | US-03             | Buscar y seleccionar un doctor        | Como usuario, quiero poder buscar y seleccionar a un doctor de acuerdo a su especialidad para programar una consulta.      | 3                |
+| 4           | US-04             | Ver el historial de citas             | Como usuario, quiero poder ver el historial de citas para tener un registro de mis consultas médicas.                      | 3                |
+| 5           | US-05             | Reservar una cita médica              | Como usuario, quiero poder reservar una cita médica en la aplicación para poder ser atendido sin tener que llamar al centro médico. | 5                |
+| 6           | US-06             | Ver reseñas de centros y doctores     | Como usuario, quiero poder ver las reseñas de los centros médicos y de los doctores para tomar decisiones informadas al reservar mi cita. | 3                |
+| 7           | US-07             | Registrarme en la aplicación          | Como usuario, quiero poder registrarme en la aplicación utilizando mi correo electrónico y una contraseña segura para acceder a las funcionalidades. | 5                |
+| 8           | US-08             | Iniciar sesión en la aplicación       | Como usuario, quiero poder iniciar sesión en la aplicación con mi cuenta registrada para acceder a mi perfil y servicios.   | 3                |
+| 9           | US-09             | Ver y elegir un centro médico         | Como usuario, quiero poder ver una lista de los centros médicos disponibles y elegir uno para mi consulta.                 | 3                |
+| 10          | US-10             | Ver citas pendientes                  | Como doctor, quiero poder ver las citas pendientes para poder atender a mis pacientes.                                     | 2                |
+| 11          | US-11             | Ver historial de citas terminadas     | Como doctor, quiero poder ver el historial de citas que he tenido con mis pacientes para llevar un registro.               | 2                |
+
+
+
 
 ## Capítulo IV: Product Design  
 4.1. Style Guidelines  
